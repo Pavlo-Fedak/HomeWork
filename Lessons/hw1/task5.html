@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        .list{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .actor{
+            padding: 20px;
+            width: 200px;
+            height: 350px;
+            background-color: #ece89d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo_actor{
+            width: 150px;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            transition: 0.3s;
+        }
+        .actor1 { background-image: url("./img/actor1.jpg"); }
+        .actor2 { background-image: url("./img/actor2.jpg"); }
+        .actor3 { background-image: url("./img/actor3.jpg"); }
+        .actor4 { background-image: url("./img/actor4.jpg"); }
+
+        .actor1:hover { background-image: url("./img/actor1_hover.jpg"); }
+        .actor2:hover { background-image: url("./img/actor2_hover.jpg"); }
+        .actor3:hover { background-image: url("./img/actor3_hover.jpg"); }
+        .actor4:hover { background-image: url("./img/actor4_hover.jpg"); }
+
+        p{
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1>Бетмен (1989)</h1>
+<div class="list">
+    <div class="actor">
+        <div class="photo_actor actor1"></div>
+        <p class="name_actor"> Michael Keaton </p>
+        <p class="role_actor">Batman / Bruce Wayne</p>
+    </div>
+    <div class="actor">
+        <div class="photo_actor actor2"></div>
+        <p class="name_actor">Jack Nicholson </p>
+        <p class="role_actor">Joker / Jack Napier</p>
+    </div>
+    <div class="actor">
+        <div class="photo_actor actor3"></div>
+        <p class="name_actor">Kim Basinger </p>
+        <p class="role_actor">Vicki Vale</p>
+    </div>
+    <div class="actor">
+        <div class="photo_actor actor4"></div>
+        <p class="name_actor">Pat Hingle </p>
+        <p class="role_actor">Commissioner Gordon</p>
+    </div>
+</div>
+
+</body>
+</html>
