@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        a {
+            font-weight: bold;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+        }
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section p{
+            width: 70%;
+            text-align: center;
+        }
+        .top-section{
+            background-color: coral;
+        }
+        .middle-section{
+            background-color: aqua;
+        }
+        .bottom-section{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+<section class="top-section" id="top">
+    <h2>Section Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+    <div><a href="#middle">
+        &#8595
+    </a></div>
+</section>
+<section class="middle-section" id="middle">
+    <div><a href="#top">
+        &#8593
+    </a></div>
+    <h2>Section Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+    <div><a href="#bottom">
+        &#8595
+    </a></div>
+</section>
+<section class="bottom-section" id="bottom">
+    <div><a href="#middle">
+        &#8593
+    </a></div>
+    <h2>Section Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate maxime nam provident quam quia, voluptatem? Ad aliquam deserunt dicta illo incidunt nisi repudiandae sequi unde voluptas voluptate. Consectetur est explicabo fugit incidunt officiis quae rem repellendus similique voluptates voluptatibus!</p>
+
+</section>
+</body>
+</html>
