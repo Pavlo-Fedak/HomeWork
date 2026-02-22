@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .orbit{
+            width: 200px;
+            height: 200px;
+            border: 10px solid lightgray;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rotator{
+            width: 200px;
+            height: 200px;
+
+            animation: rotate 4s linear infinite;
+        }
+
+        .planet{
+            width: 30px;
+            height: 30px;
+            background: orange;
+            border-radius: 50%;
+            transform: translate(-20px, 0px);
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="orbit">
+    <div class="rotator">
+        <div class="planet"></div>
+    </div>
+</div>
+</body>
+</html>
