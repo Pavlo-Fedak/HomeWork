@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Billabong";
+    src: url("fonts/Billabong.otf") format("opentype"),
+    url("fonts/Billabong.ttf") format("truetype");
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited,
+a:hover,
+a:active{
+    color: inherit;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    width: 100%;
+}
+.logo{
+    margin: 30px auto;
+    font-family: "Billabong";
+    font-size: 60px;
+}
+.login>form{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+.login > form > input:not([type="submit"]){
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    background-color: rgba(217, 217, 217, 0.21);
+}
+.login>form>input[type=submit]{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(24, 120, 241, 0.65);
+    color: white;
+}
+.login>p:nth-of-type(1){
+    text-transform: uppercase;
+    color: #605e5e;
+    font-weight: bold;
+}
+.login>a{
+    color: rgb(16, 70, 140);
+    margin: 10px;
+}
+
+.login>a:nth-of-type(1){
+    font-weight: bold;
+}
+.login>a:nth-of-type(2){
+    margin-bottom: 25px;
+}
+.login>a:nth-of-type(1)::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("img/icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-bottom: -6px;
+}
+
+.registration {
+    margin-top: 1vh;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    width: 100%;
+    text-align: center;
+}
+.registration>p>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(24, 120, 241);
+}
+.registration>p>a:visited{
+    color: rgb(24, 120, 241);
+}
