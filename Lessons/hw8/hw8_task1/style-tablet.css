@@ -1,0 +1,16 @@
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body{
+        padding: 32px 16px;
+    }
+    .cards{
+        width: 720px;
+        align-items: start;
+
+    }
+    .card{
+        width: 218px;
+        gap: 15px;
+    }
+
+
+}
